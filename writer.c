@@ -1,9 +1,7 @@
-#include <iostream>
 #include <sys/ipc.h>
 #include <sys/shm.h>
 #include <stdio.h>
 
-using namespace std;
 
 int main()
 {
@@ -13,8 +11,8 @@ int main()
 
     char *str = (char *)shmat(shmid, (void *)0, 0);
 
-    cout << "Write Data: ";
-    cin >> str;
+    printf("Write Data: ");
+    scanf("%[^\n]%*c", str);
 
     printf("Data written in memory: %s\n", str);
 
