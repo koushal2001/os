@@ -135,8 +135,6 @@ int main()
 		printf("Enter the element [%d]:- ", i);
 		scanf("%d", &arr[i]);
 	}
-    bubble_sort(arr,n);
-    print_arr(arr,n);
     forkEx();
     return 0;
 }
